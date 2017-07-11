@@ -1,0 +1,17 @@
+Criando um projeto no laravel na minha maquina:
+
+Ir no local que extrair os arquivos do vagrant
+execultar vagrant up (Finalizar Vagrant = vagrant halt)
+abrir minha maquina no putty ssh
+ir até a pasta que fica os arquivos do laravel /var/www/html
+Criar o projeto composer create-project --prefer-dist laravel/laravel nomeDoProjeto
+Iniciar php artisan serve
+Criar o link do projeto no arquivo de configuraçao do apache /etc/apache2/sites-available
+Adicionar linha para novo site
+Configurar a linha de host #sudo nano /etc/hosts
+Restartar o apache #sudo service apache2 restart
+Configurar arquivo "hosts" do windows C:\Windows\System32\drivers\etc\
+
+Configurar o arquivo do laravel projeto>config>app.php
+Alterar linha 'url' => env('APP_URL', 'http://localhost'), para 'url' => env('APP_URL', 'http://"nova url"'),
+Alterar linha 'timezone' => 'UTC', para 'timezone' => 'America/Sao_Paulo',
